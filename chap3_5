@@ -1,0 +1,72 @@
+
+package System.out;
+import java.util.Scanner;
+
+public class chap3_5 {
+	
+	public static void main (String[] args){
+		
+		Scanner input = new Scanner (System.in);
+		
+		System.out.print("Enter today's day: ");
+		int today = input.nextInt();
+		System.out.print("Enter the number of days elapsed since today: ");
+		int future = input.nextInt();
+		
+		String S;
+		int day = today ;
+		
+		if (day==1){
+			S=" Monday ";}
+		
+		else if (day==2){
+			S=" Tuesday ";}
+		
+		else if (day==3){
+			S=" Wednesday ";}
+		
+		else if (day==4){
+			S=" Thursday ";}
+		
+		else if (day==5){
+			S=" Friday ";}
+		
+		else if (day==6){
+			S=" Saturday ";}
+		
+		else {
+			S=" Sunday ";}
+		
+		
+		System.out.println("Today is " + S);
+		
+		day = today + future;
+		
+		if (day==1){
+			S=" Monday ";}
+		
+		else if (day==2){
+			S=" Tuesday ";}
+		
+		else if (day==3){
+			S=" Wednesday ";}
+		
+		else if (day==4){
+			S=" Thursday ";}
+		
+		else if (day==5){
+			S=" Friday ";}
+		
+		else if (day==6){
+			S=" Saturday ";}
+		
+		else {
+			S=" Sunday ";}
+		
+		System.out.println("And the future day is " + S);
+	
+	}
+
+}
+
+  
